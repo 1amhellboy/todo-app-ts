@@ -10,7 +10,7 @@ app.post("/signup",(req,res)=>{
 	const { username, password } = req.body;
 	users.push({username, password});
 
-	req.json({message:"done"});
+	res.json({message:"done"});
 });
 
 app.listen(3000);
